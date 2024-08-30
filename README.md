@@ -1,16 +1,40 @@
 # ASA-DATAFEST-2023
 
-## This is our award-winning presentation at the 2023 UCLA ASA DATAFEST. The data was provided by the American Bar Association. Our original goal was to develop a numerical metric to rate lawyer's performance and client satisfaction, leading to a practical analysis to improve client-lawyer match rate and overall user experience. 
 
-## After cleaning out the text data and running a predictive sentiment model to give each text a positivity score, we were able to draw some general findings:
-- Most states showed an increase in positivity after receiving a lawyer's reply, EXCEPT Kansas
-- Faster response does not necessarily lead to better sentiment level (content quality may be more important then efficiency)
-- Shorter lawyer replies tend to yield a better user response rate and sentiment level (Clients prefer concise answers over complicated ones)
+## Project Overview
 
-## However, after analyzing the clients' interaction with lawyers, we discovered a more vital problem within the system: From signing up an account to getting the question answered, each stage involved a massive user churn. Based on our findings, we constructed a 5-level funnel model to analyze user churn and provided constructive solutions to each stage:
-- Registration: Most users were denied access to an account because they entered Null as their income, while the primary users of the system were low-income households. Solution: Detailed income investigation.
-- Question Posting: There is a mismatch of lawyers' expertise and clients' needs (Family,Children, and Housing were the most popular categories while they have the least answering rates.) Solution: Recruit and allocate lawyers according to the needs identified.
-- Receiving Answer: Each post will automatically close after 10 days, but the average lawyer replying time for most categories is over 10 days. Solution: extend the closing date and enforce monitor program that prioritize older posts.
-- Follow-up: Most conversations ended after the legal end date of clients' trials, meaning they never got to utilize the advice from the platform. Solution: enhance user response rate based on findings from the first section, add a rating system after each consultation and track user retention rate for better future analysis.
+This repository contains the presentation for our award-winning project at the 2023 UCLA ASA DATAFEST. The data was provided by the American Bar Association, and our goal was to develop a numerical metric to rate lawyer performance and client satisfaction. The findings from this project aimed to improve the client-lawyer match rate and overall user experience.
 
-## With our findings and solutions, our team achieved the Award for Best User Experience.
+## Sentiment Analysis
+After cleaning the text data and applying a predictive sentiment model, we assigned positivity scores to client-lawyer interactions. Notable insights include:
+   - **State Variations**: Most states showed an increase in positivity after receiving a lawyer's response, with the exception of Kansas.
+   - **Response Time vs. Quality**: Faster responses did not necessarily lead to better sentiment; the quality of the content was more important.
+   - **Concise Replies Preferred**: Shorter, more concise lawyer replies resulted in higher user response rates and better sentiment levels.
+
+## User Churn Analysis
+
+During the analysis, we identified significant user churn at various stages of the client-lawyer interaction process. We constructed a 5-level funnel model to analyze this churn and propose targeted solutions:
+
+### Registration
+- **Problem**: Many users were denied access to an account because they entered "Null" as their income, despite the platform primarily serving low-income households.
+- **Solution**: Implement a more detailed income verification process.
+
+### Question Posting
+- **Problem**: There was a mismatch between lawyer expertise and client needs. Categories like Family, Children, and Housing were the most popular but had the lowest response rates.
+- **Solution**: Recruit and allocate lawyers based on identified client needs.
+
+### Receiving Answers
+- **Problem**: Each post automatically closed after 10 days, but the average response time from lawyers often exceeded this period.
+- **Solution**: Extend the closing date and introduce a monitoring program to prioritize older posts.
+
+### Follow-up
+- **Problem**: Many conversations ended after the legal end date of clients' trials, meaning clients never fully utilized the advice provided.
+- **Solution**: Enhance user response rates by implementing a rating system after each consultation and tracking user retention for better future analysis.
+
+
+
+By addressing these key issues, our solutions significantly improved the user experience on the platform. Our team was honored with the Award for Best User Experience at the 2023 UCLA ASA DATAFEST.
+
+---
+
+Feel free to explore the repository to see the full analysis and presentation that led to these findings.
